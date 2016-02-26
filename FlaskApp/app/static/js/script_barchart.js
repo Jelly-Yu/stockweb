@@ -1,8 +1,5 @@
-/**
- * Created by iris on 2/20/16.
- */
 $(function () {
-    $('#container').highcharts({
+    $('#bar_chart').highcharts({
         data: {
             table: 'datatable'
         },

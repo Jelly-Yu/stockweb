@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <!-- Some stuff here which should be included in all templates for example js or css -->
         {% block extra_css %}
             <!-- to included app-template dependent css -->
 	    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.min.css') }}"> 
-            <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"> 
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
         {% endblock extra_css %}
 
         {% block extra_js %}

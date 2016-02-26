@@ -23,27 +23,24 @@
         <p>This project aims to predict stock using data collected from Twitter and Facebook. The prediction and real time value are shown as below.</p>
     </div>
     <div class="panel">
-
-        <div class="chart" id="container"></div>
+        <div class="chart" id="bar_chart"></div>
     </div>
     <table id="datatable" >
         <thead>
-        <tr>
-            <th></th>
-            <th>Amazon</th>
-            <th>Facebook</th>
-            <th>Google</th>
-        </tr>
+            <tr>
+                <th></th>
+                <th>Amazon</th>
+                <th>Facebook</th>
+                <th>Google</th>
+            </tr>
         </thead>
         <tbody>
-
-        <tr>
-            <th>2016-2-19</th>
-            {% for item in info %}
-            <td>{{ item }}</td>
-            {% endfor %}
-        </tr>
-
+            <tr>
+                <th>2016-2-19</th>
+                {% for item in info %}
+                <td>{{ item }}</td>
+                {% endfor %}
+            </tr>
         </tbody>
     </table>
 </div>
